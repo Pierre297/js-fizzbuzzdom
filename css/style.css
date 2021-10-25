@@ -13,7 +13,7 @@ h1 {
   text-align: center;
 }
 
-#containerSquare {
+#container-square {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
