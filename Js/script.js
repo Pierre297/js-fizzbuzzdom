@@ -3,16 +3,16 @@ const squareElement =  document.getElementById("container-square");
 for( let i = 1; i <= 100; i++){
     
     // prima condizione Fizz
-    if(i % 3 == 0){
-        squareElement.innerHTML += `<div class="square fizz">fizz</div>`;
+    if((i % 3 === 0)&&(i % 5 === 0)){
+        squareElement.innerHTML += `<div class="square fizzbuzz">FizzBuzz</div>`;
     }
     // seconda condizione buzz
-    else if(i % 5 == 0){
+    else if(i % 5 === 0){
         squareElement.innerHTML += `<div class="square buzz">buzz</div>`;
     }
     // terza condizione FizzBuzz
-    else if(i % 3 == 0 && i % 5 == 0){
-        squareElement.innerHTML += `<div class="square fizzbuzz">FizzBuzz</div>`;
+    else if(i % 3 === 0){
+        squareElement.innerHTML += `<div class="square fizz">fizz</div>`;
     }
     // ultima condizione
     else{
@@ -21,6 +21,8 @@ for( let i = 1; i <= 100; i++){
 }
 
 };
+
+
 
 
 
